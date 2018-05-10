@@ -14,5 +14,5 @@ Steps to run:
 
           *Clone the repository
           *import the billing.sql file in database named 'billing'
-          *run billing.php
+          *run Billing.php
 
