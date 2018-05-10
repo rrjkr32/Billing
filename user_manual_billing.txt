@@ -1,0 +1,17 @@
+-----------------------------------USER MANUAL----------------------------------------------------------------
+
+The frontend of page billing.php displays the items in the menu along with their price.
+In order to bill: One should enter the customer name ,customer age in corresponding input fields.
+		 The number of item of each type is to be assinged in the input field.
+		One clicking the Place button the order is validated.
+		If age is more than 10 and 3 items have been ordered the billing is successful the the tables are updated successfully.
+		The total ,tax and net total is dynamically calcuted and entire invoice is ready to be printed.
+		
+		otherwise the error message is displayed.
+
+
+------------------Database-------------------
+The table tbl has :stock info of each item and user can update stock field .
+		  sold info of each item which shows total number of that particular item that has been sold.
+
+The table bills has info about each order that is successfully placed.

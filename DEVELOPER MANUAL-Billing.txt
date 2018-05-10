@@ -1,0 +1,53 @@
+-------------------------------------DEVELOPER MANUAL-------------------------------------------
+
+
+class Bill: This class has 
+		* member variable- $conn: for connecting to databse.
+		*a constrcutor which connects to database named "billing"
+		*a function 'order':
+				This function has customer information  
+				and order information.
+				It validates whether customer age is more than 10 or not.
+				It also validates that exactly 3 items have been ordered.
+				
+				On successful validation :
+					
+						*mysql queries are executed
+							(i)for($sql1 to $sql8) The table tbl which contains stock and sold info of each item is updated.
+							(ii)for($isql) The table bills that contains info about each bill is updated i.e. order info are inserted into table.		
+
+				
+object 	'ord' of class Bill:calls the function 'order' and loads the error message is $error.
+
+
+variables:$c= Total type of items ordered.
+	  $totp=Total excluding tax.
+	  $tota=Total items ordred.
+	  $tax=Tax
+	  $ntot= net total.
+	  $cname= Customer name.
+	  $cage= customer age.
+	  $one... $eight for different items
+
+
+----------------------------------HTML ---------------
+contains a form of method POST:
+*input field for customer name and customer age .
+*input tags for all eight items are taken and named 'one' 'two'......'eight'
+ tag name for total,tax and net total are totp,tax,ntot.
+
+-------------Database----------------------------
+
+Name=Billing
+two tables: 
+(i) tbl:contains fields for item name,no. of item in stock and no. of item sold for all the eight items.
+(ii) bills:contais all info related to a particular order and is used to print bills.
+	  Each row corresponds to one successful order placed.
+
+
+
+
+
+ 
+				
+		
